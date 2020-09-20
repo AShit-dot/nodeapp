@@ -1,0 +1,22 @@
+nav
+  .nav-wrapper.nav-upstyles
+    a.brand-logo(href='#') Logo
+    ul#nav-mobile.right.hide-on-med-and-down
+      if isMain
+        li
+            a.active(href='/') Main page
+      else
+        li
+            a(href='/') Main page
+      if isCourses
+        li
+            a.active(href='/courses') Courses
+      else
+        li
+            a(href='/courses') Courses
+      if isAdd
+        li
+            a.active(href='/add') Add a course
+      else
+        li
+            a(href='/add') Add a course

@@ -1,0 +1,18 @@
+extends layouts/header
+block content
+    h1 Add a page
+    h2 Add the new Courses
+    .row
+        form(method="post" action="/add").col.s12
+            .row
+                .input-field.col.s6
+                    input#first_name.validate(placeholder='Course' type='text' name="title")
+                
+                .input-field.col.s6
+                    input#first_name.validate(placeholder='Price' type='text' name="price")
+
+                .input-field.col.s6
+                    input#first_name.validate(placeholder='URL' type='text' name="url")
+
+                button(type="submit").btn.col.s4 Buy
+            
